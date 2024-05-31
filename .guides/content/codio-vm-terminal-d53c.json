@@ -1,0 +1,27 @@
+{
+	"id": "d53c9ef3-55ad-662c-17b6-d675b3daabbe",
+	"title": "codio vm terminal",
+	"files": [
+		{
+			"path": "#tabs",
+			"action": "close"
+		},
+		{
+			"path": "#vmssh: ",
+			"panel": 0,
+			"action": "open"
+		},
+		{
+			"path": "#preview: https://{{domain3355}}/time",
+			"panel": 1,
+			"action": "open"
+		}
+	],
+	"layout": "3-cell-tree",
+	"path": [],
+	"type": "page",
+	"contentType": "markdown",
+	"teacherOnly": false,
+	"closeTerminalSession": true,
+	"learningObjectives": ""
+}
