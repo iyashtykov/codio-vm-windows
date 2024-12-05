@@ -2,10 +2,10 @@
 	"type": "test",
 	"taskId": "test-2893791218",
 	"source": {
-		"name": "codio-vm windows",
+		"name": "codio-tools windows",
 		"showName": true,
-		"instructions": "run codio-vm methods",
-		"command": "bash codio-vm-windows.sh",
+		"instructions": "run codio-tools methods",
+		"command": "bash codio-tools-windows.sh",
 		"timeoutSeconds": 60,
 		"guidance": "",
 		"showGuidanceAfterResponseOption": {

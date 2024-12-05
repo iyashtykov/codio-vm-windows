@@ -13,7 +13,7 @@
 	"hideBackToDashboard": false,
 	"protectLayout": false,
 	"order": [
-		"codio-vm-windows-c84c",
-		"codio-vm-terminal-d53c"
+		"codio-tools-windows-c84c",
+		"codio-tools-terminal-d53c"
 	]
 }

@@ -8,33 +8,33 @@ subfolder="subfolder"
 subfile="subfile.sh"
 remote_subfile="$remote_foldername"\"$subfolder"\"$subfile"
 sleep_seconds=2
-codio-vm ping
-codio-vm help
-codio-vm get-ip
-codio-vm get-host-name
-codio-vm status
+codio-tools ping
+codio-tools help
+codio-tools get-ip
+codio-tools get-host-name
+codio-tools status
 echo "ls -al" > "$local_filename"
 mkdir -p "$local_foldername"
 mkdir -p "$local_foldername"/"$subfolder"
 echo "ls" > "$local_foldername"/"$subfolder"/"$subfile"
 sleep $sleep_seconds
-codio-vm upload $local_filename $remote_filename
-codio-vm upload $local_foldername $remote_foldername
-codio-vm download $remote_filename $temp_local_filename
+codio-tools upload $local_filename $remote_filename
+codio-tools upload $local_foldername $remote_foldername
+codio-tools download $remote_filename $temp_local_filename
 sleep $sleep_seconds
 rm -r $temp_local_filename
 rm -r $local_filename
-codio-vm download $remote_foldername $temp_local_foldername
+codio-tools download $remote_foldername $temp_local_foldername
 sleep $sleep_seconds
 rm -rf $temp_local_foldername
 rm -rf $local_foldername
-codio-vm exec dir $remote_filename
+codio-tools exec dir $remote_filename
 sleep $sleep_seconds
-codio-vm exec dir $remote_subfile
+codio-tools exec dir $remote_subfile
 sleep $sleep_seconds
-codio-vm exec-async dir $remote_filename
+codio-tools exec-async dir $remote_filename
 sleep $sleep_seconds
-codio-vm exec del $remote_filename
+codio-tools exec del $remote_filename
 sleep $sleep_seconds
-codio-vm exec-async rmdir /s /q $remote_foldername
-codio-vm exec start chrome /incognito  https://codio.com
+codio-tools exec-async rmdir /s /q $remote_foldername
+codio-tools exec start chrome /incognito  https://codio.com

@@ -2,10 +2,10 @@
 	"type": "test",
 	"taskId": "test-1711601481",
 	"source": {
-		"name": "codio-vm daemonized-list",
+		"name": "codio-tools daemonized-list",
 		"showName": true,
-		"instructions": "codio-vm daemonized-list",
-		"command": "codio-vm daemonized-list",
+		"instructions": "codio-tools daemonized-list",
+		"command": "codio-tools daemonized-list",
 		"timeoutSeconds": 40,
 		"guidance": "",
 		"showGuidanceAfterResponseOption": {
